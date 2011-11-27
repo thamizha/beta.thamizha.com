@@ -31,7 +31,7 @@ body {
    */
   margin-left: auto;
   margin-right: auto;
-  width: 960px;
+  width: 940px;
 }
 
 #page {
@@ -145,7 +145,7 @@ body {
 }
 
 .region-sidebar-second .section {
-  margin: 0 0 0 20px; /* LTR */
+  margin: 0 0 0 10px; /* LTR */
   padding: 0;
 }
 

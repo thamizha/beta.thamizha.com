@@ -111,7 +111,7 @@ body {
 .chat-now, .report-issues, .join-community {
   font-size: 1.2em;
   padding: 0.5em;
-  margin: 0.5em;
+  margin: 0.5em 0;
 }
 
 .chat-now p, .report-issues p, .join-community p {
