@@ -5,3 +5,129 @@ body {
     background: url(../images/bg-pattern.png);
 }
 
+/* Home page */
+#home-slogan {
+  background: url('../images/bg-intro.jpg') repeat scroll 0 0 #666666;
+  margin: 1em 0;
+}
+
+#home-slogan-inner {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 1em 2em;
+}
+
+#home-slogan-inner h1 {
+	color: #FFF;
+	font-size:1.5em;
+}
+
+#home-slogan-inner .btn {
+	color: #fff;
+  border: 1px solid #6d0019;
+  font-weight: normal;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
+  background: #a90329; /* Old browsers */
+  background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+  background: linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+  cursor: pointer;
+  display: inline-block;
+  overflow: visible;
+  padding: 0.2em 0.4em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.view-frontpage .views-row {
+	width:275px;
+	height: 275px;
+	float:left;
+	margin:5px;
+	padding: 0 10px 10px;
+	border: 1px solid #CCC;
+	position: relative;
+}	
+
+.view-frontpage .views-row .download-btn {
+	background: -moz-linear-gradient(center top , #EEEEEE 0%, #CCCCCC 100%) repeat scroll 0 0 transparent;
+  border-color: #CCCCCC #BBBBBB #A0A0A0;
+  border-style: solid;
+  border-width: 1px;
+  color: #666;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  overflow: visible;
+  padding: 0.2em 0.4em;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.view-frontpage .views-row .product-link {
+	position: absolute;
+	right:10px;
+	bottom: 10px;
+	color: #53777A;
+	text-decoration: none;
+}
+
+#simplenews-block-form-1 .form-item-mail {
+	margin:0.5em 0;
+}
+
+#simplenews-block-form-1 .form-item-mail label {
+	font-weight: normal;
+}	
+
+#simplenews-block-form-1 #edit-submit {
+  background: none repeat scroll 0 0 #53777A;
+  color: #FFFFFF;
+  padding: 0.2em 0.4em;
+  border: medium none;
+  cursor:pointer;
+}  
+
+#simplenews-block-form-1 .note {
+	color: #53777A;
+	margin-top: 0;
+	font-size: 0.785em;
+}
+
+.chat-now {
+	background: none repeat scroll 0 0 #C02942;
+}
+
+.report-issues {
+	background: none repeat scroll 0 0 #D95B43;
+}
+
+.join-community {
+	background: none repeat scroll 0 0 #542437;
+}
+
+.chat-now, .report-issues, .join-community {
+  font-size: 1.2em;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.chat-now p, .report-issues p, .join-community p {
+	color: #FFFFFF;
+  margin-top: 0;
+}
+
+.chat-now a, .report-issues a, .join-community a {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+  border: medium none;
+  color: #CCCCCC;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: inline-block;
+  overflow: visible;
+  padding: 0.2em 0.4em;
+  text-decoration: none;
+  border-radius: 5px;
+}	
