@@ -30,7 +30,10 @@
  *
  * @see template_preprocess_simplenews_block()
  */
+
+
 ?>
+<?php if(user_access('subscribe to newsletters')):?>
   <?php if ($message): ?>
     <?php $message = t($message); ?>
     <?php $a = 0; ?>
@@ -42,10 +45,13 @@
       if (isset($form['mail']['#title'])) {
         $form['mail']['#title'] = t('Enter your email address');
       }
+    
       if ($form['submit']['#value'] == t('Subscribe')) {
         $form['submit']['#value'] = t('Subscribe to our mailing list');
         $form['submit']['#suffix'] = '<p class="note">(' . t('We promise not to spam you!') . ')</p>';
-      }    
+      } 
+      
+        
     ?>
     <?php print render($form); ?>
   <?php elseif ($subscription_link): ?>
@@ -63,3 +69,4 @@
   <?php if ($use_rss): ?>
     <?php print $rssfeed; ?>
   <?php endif; ?>
+<?php endif;?>

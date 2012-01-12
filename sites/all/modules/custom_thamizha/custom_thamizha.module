@@ -1,0 +1,44 @@
+<?php
+/**
+* @file
+* Add dyanamic values to Select Field in Webform
+*/
+
+/**
+* Implementing hook_webform_select_options_info()
+*/
+function custom_thamizha_webform_select_options_info(){
+	$items = array();
+	$items['products'] = array(
+		'title' => 'Products',
+		'options callback' => 'custom_thamizha_products_options',
+	);
+	
+	return $items;
+}
+
+/**
+* Load Product node title from databse
+* using db_select query 
+*/
+
+function custom_thamizha_products_options(){
+	
+	global $language;
+	$current_lang = $language->language;
+	
+	$query = db_select('node','n')
+		->fields('n',array('nid','type','title'))
+		->condition('language',$current_lang,'=')
+		->execute();
+		
+		$options = array();
+		
+		foreach($query as $node){
+			if($node->type == 'product'){
+				$options[$node->nid] = $node->title;
+			};
+		}
+	
+	return $options;
+}
