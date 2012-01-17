@@ -140,3 +140,24 @@ function STARTERKIT_preprocess_block(&$variables, $hook) {
   $variables['classes_array'][] = 'count-' . $variables['block_id'];
 }
 // */
+
+/**
+ * Overiding theme_pubdlcnt_counter 
+ */
+
+
+function thamizha_theme_pubdlcnt_counter($variables) {
+
+  $type = $variables['type'];
+  $value = $variables['value'];
+  $path = $variables['path'];
+  
+  if ($path) {
+    $output = ' <a href="' . $path . '">(' . $value . ' '.t('Downloads').')</a>';
+  }
+  else {
+    $output = ' (' . $value . ' '.t('Downloads').')';
+  }
+  return $output;
+}
+

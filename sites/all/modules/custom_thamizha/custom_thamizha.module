@@ -30,14 +30,13 @@ function custom_thamizha_products_options(){
 	$query = db_select('node','n')
 		->fields('n',array('nid','type','title'))
 		->condition('language',$current_lang,'=')
+		->condition('type','product','=')
 		->execute();
 		
 		$options = array();
 		
 		foreach($query as $node){
-			if($node->type == 'product'){
-				$options[$node->nid] = $node->title;
-			};
+			$options[$node->nid] = $node->title;			
 		}
 	
 	return $options;

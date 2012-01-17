@@ -1379,7 +1379,7 @@ function theme_pubdlcnt_counter($variables) {
 function _pubdlcnt_language_prefix() {
   global $language;
 
-  if ($language->prefix != '' && variable_get('language_negotiation', LANGUAGE_NEGOTIATION_NONE) != LANGUAGE_NEGOTIATION_NONE) {
+  if ($language->prefix != '' && variable_get('language_negotiation', LANGUAGE_NEGOTIATION_DEFAULT) != LANGUAGE_NEGOTIATION_DEFAULT) {
     return $language->prefix . '/';
   }
   return '';
